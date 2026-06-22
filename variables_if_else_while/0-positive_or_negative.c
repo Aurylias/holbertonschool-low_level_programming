@@ -3,9 +3,8 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- * if - resolve the problem
- * return - Always 0 (Success)
+ * main - Generate a random number and print if it's positive or negative
+ * Return - Always 0 (Success)
  */
 
 int main(void)
