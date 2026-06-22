@@ -1,9 +1,8 @@
 #include <stdio.h>
-
 /**
 * main - Entry Point
-*
-*Return: Alwats 0 (Success)
+* printf: Output different size of multiple type
+* Return: Alwats 0 (Success)
 */
 
 int main(void)
