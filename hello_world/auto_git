@@ -1,0 +1,13 @@
+#!/bin/bash
+cd "$(dirname "$0")"
+find . -type f ! -name "README.md" ! -name "auto_git" -exec chmod u+x {} +
+git add . ':!README.md' ':!*/README.md'
+echo "Type your commit message :"
+read commit_message
+git commit -m "$commit_message"
+#echo "Type the remote you want to push in :"
+#read remote_to_use
+#echo "Type the branch you want to push in :"
+#read branch_to_use
+git push 
+#$remote_to_use $branch_to_use
