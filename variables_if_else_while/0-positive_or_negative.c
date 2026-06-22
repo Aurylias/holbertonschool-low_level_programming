@@ -3,10 +3,10 @@
 #include <stdio.h>
 
 /**
-* main - Entry point
-* if - resolve the problem
-* return - Always 0 (Success)
-*/
+ * main - Entry point
+ * if - resolve the problem
+ * return - Always 0 (Success)
+ */
 
 int main(void)
 {
