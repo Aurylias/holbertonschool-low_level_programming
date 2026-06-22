@@ -11,3 +11,4 @@ git commit -m "$commit_message"
 #read branch_to_use
 git push 
 #$remote_to_use $branch_to_use
+clear
