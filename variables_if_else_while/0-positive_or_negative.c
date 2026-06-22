@@ -4,7 +4,7 @@
 
 /**
  * main - Generate a random number and print if it's positive or negative
- * Return - Always 0 (Success)
+ * Return:  Always 0 (Success)
  */
 
 int main(void)
