@@ -15,7 +15,7 @@ int main(void)
 		a++;
 		char_value++;
 	} while (a < 10);
-	printf("\n");
+	putchar(10);
 
 	return (0);
 }
