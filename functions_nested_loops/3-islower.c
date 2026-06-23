@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _islower - Print the alphabet ten times
+ * _islower - Check if the letter is lower case
  *@c: The char value
  * Return: None
  */
