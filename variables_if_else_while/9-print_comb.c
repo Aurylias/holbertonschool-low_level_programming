@@ -7,15 +7,18 @@
 
 int main(void)
 {
-	int digits;
-	int tens;
+	int number;
 
-	for (tens = 48; tens < 58; tens++)
+	for (number = 48; number < 58; number++)
 	{
-		for (digits = 48; digits < 58; digits++)
+		putchar(number);
+
+		if (number == 57)
 		{
-			putchar(tens);
-			putchar(digits);
+
+		}
+		else
+		{
 			putchar(44);
 			putchar(32);
 		}
