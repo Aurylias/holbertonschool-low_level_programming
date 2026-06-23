@@ -8,27 +8,7 @@
 
 int _islower(int c)
 {
-	int letter;
-	int check = 0;
-
-	for (letter = 97; letter <= 122; letter++)
-	{
-		if (c != letter)
-		{
-			check++;
-		}
-	}
-
-	for (letter = 48; letter <= 57; letter++)
-	{
-		if (c != letter)
-		{
-			check++;
-		}
-	}
-
-
-	if (check > 0)
+	if (c => 'a' && c <= 'z')
 	{
 		return (1);
 	}
