@@ -11,13 +11,22 @@ int _islower(int c)
 	int letter;
 	int check = 0;
 
-	for (letter = '!'; letter <= '~'; letter++)
+	for (letter = 'a'; letter <= 'z'; letter++)
 	{
 		if (c != letter)
 		{
 			check++;
 		}
 	}
+
+	for (letter = '0'; letter <= '9'; letter++)
+	{
+		if (c != letter)
+		{
+			check++;
+		}
+	}
+
 
 	if (check > 0)
 	{
