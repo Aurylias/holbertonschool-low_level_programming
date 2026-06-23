@@ -3,7 +3,7 @@
 /**
  * print_sign - Check if a number is great, lower or equal to 0
  *@n: The value of an int
- * Return: None
+ * Return: An int, 1, 0 or -1
  */
 
 int print_sign(int n)
