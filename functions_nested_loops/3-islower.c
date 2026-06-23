@@ -11,7 +11,7 @@ int _islower(int c)
 	int letter;
 	int check = 0;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
+	for (letter = '!'; letter <= '~'; letter++)
 	{
 		if (c != letter)
 		{
