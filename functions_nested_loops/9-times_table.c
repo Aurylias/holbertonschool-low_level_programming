@@ -15,37 +15,25 @@ void times_table(void)
 		{
 			int result = table * table_count;
 
-			if (result < 10)
+			if (table_count == 0)
 			{
 				_putchar('0' + result);
-
-				if (table_count != 9)
-				{
-					_putchar(',');
-				}
-
-				_putchar(' ');
-				_putchar(' ');
 			}
-			else
+			else if (result <= 9)
 			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+				_putchar('0' + result);
+			}
+			else if (result > 9)
+			{
+				_putchar(',');
+				_putchar(' ');
 				_putchar('0' + (result / 10));
 				_putchar('0' + (result % 10));
-				if (result != 81)
-				{
-					if (table_count != 9)
-					{
-						_putchar(',');
-					}
-
-					_putchar(' ');
-				}
-			}
-
-			if (table_count == 9)
-			{
-				_putchar('\n');
 			}
 		}
+		_putchar('\n');
 	}
 }
