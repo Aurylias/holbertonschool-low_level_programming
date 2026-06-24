@@ -8,7 +8,7 @@ int sum_to_n(int n)
 	for (i = 0; i <= n; i++)
 		sum += i;
 
-	return n;
+	return sum;
 }
 
 int main(void)
