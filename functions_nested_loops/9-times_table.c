@@ -32,7 +32,11 @@ void times_table(void)
 				_putchar('0' + (result % 10));
 				if (result != 81)
 				{
-					_putchar(',');
+					if (table_count != 9)
+					{
+						_putchar(',');
+					}
+					
 					_putchar(' ');
 				}
 			}
