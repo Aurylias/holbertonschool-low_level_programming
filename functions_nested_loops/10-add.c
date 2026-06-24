@@ -2,8 +2,8 @@
 
 /**
  * add - Return result of a + b
- * @a = a value
- * @b = b value
+ * @a: a value
+ * @b: b value
  * Return: A int
  */
 
