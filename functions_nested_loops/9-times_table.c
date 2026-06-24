@@ -11,19 +11,20 @@ void times_table(void)
 
 	for (table = 0; table <= 9; table++)
 	{
-		for (table_count = 0; table_count <=9; table_count++)
+		for (table_count = 0; table_count <= 9; table_count++)
 		{
 			int result = table * table_count;
 
 			if (result < 10)
 			{
 				_putchar('0' + result);
-				
+
 				if (table_count != 9)
 				{
 					_putchar(',');
 				}
 
+				_putchar(' ');
 				_putchar(' ');
 			}
 			else
@@ -36,7 +37,7 @@ void times_table(void)
 					{
 						_putchar(',');
 					}
-					
+
 					_putchar(' ');
 				}
 			}
