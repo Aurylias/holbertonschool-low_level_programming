@@ -19,7 +19,7 @@ void jack_bauer(void)
 				_putchar('0');
 			}
 
-			_putchar((hours - (hours - 1)) + '0');
+			_putchar((hours - (hours - 1) + 47) + '0');
 			_putchar(':');
 
 			if (minutes < 10)
