@@ -34,6 +34,8 @@ void jack_bauer(void)
 					_putchar(minutes_tens_digit + '0');
 					_putchar(minute_digit + '0');
 					_putchar('\n');
+
+					hours_digit = 0;
 				}
 			}
 		}
