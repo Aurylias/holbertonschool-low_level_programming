@@ -8,7 +8,6 @@
 void jack_bauer(void)
 {
 	int hours = 8;
-	int minutes;
 
 	_putchar(hours);
 }
