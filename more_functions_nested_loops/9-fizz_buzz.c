@@ -2,7 +2,7 @@
 
 /**
  * main - Print 1 to 100 but changing multiple of 3 and 5
- * Return: None
+ * Return: Always 0 (Success)
  */
 
 int main(void)
@@ -37,4 +37,6 @@ int main(void)
 			printf(" ");
 		}
 	}
+
+	return (0);
 }
