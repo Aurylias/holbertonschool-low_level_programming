@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * more_numbers - Print 0123456789 10 times
+ * print_line - Draw a line in the terminal
+ * @n: Number of _ to print
  * Return: None
  */
 
