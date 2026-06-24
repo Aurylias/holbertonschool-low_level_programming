@@ -15,6 +15,7 @@ void jack_bauer(void)
 
 	for (hours_tens_digit = 0; hours_tens_digit <= 2; hours_tens_digit++)
 	{
+		hours_digit_turn++;
 		for (hours_digit = 0; hours_digit_turn <= 2; hours_digit++)
 		{
 			for (minutes_tens_digit = 0; minutes_tens_digit <= 5; minutes_tens_digit++)
@@ -33,7 +34,6 @@ void jack_bauer(void)
 					_putchar(minutes_tens_digit + '0');
 					_putchar(minute_digit + '0');
 					_putchar('\n');
-					hours_digit_turn++;
 				}
 			}
 		}
