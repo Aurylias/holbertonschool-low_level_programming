@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">Green Efficiency Analysis</h1>
+<h1 style="align: center;">Green Efficiency Analysis</h1>
 
 ## Measurement Methodology
 
