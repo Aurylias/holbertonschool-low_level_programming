@@ -18,7 +18,6 @@ int _strlen(char *s)
 	return (last - s - 1);
 }
 
-
 /**
  * _strcpy - Copy the string pointed to
  * @dest: Buffer destination
