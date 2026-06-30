@@ -24,17 +24,25 @@ void print_menu(void)
 
 int main(void)
 {
+	int calc_running = 1;
 	int menu_choice;
 
 	printf("Simple Calculator\n");
 
-	print_menu();
-	scanf("%d", &menu_choice);
-
-	if (menu_choice == 0)
+	while (calc_running)
 	{
-		printf(("Bye !"));
-		return (0);
+		print_menu();
+		scanf("%d", &menu_choice);
+
+		switch(menu_choice)
+		{
+			case 0:
+				printf(("Bye !"));
+				return (0);
+			default:
+				printf("Invalid choice\n")
+				break;
+		}
 	}
 	return (0);
 }
