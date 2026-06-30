@@ -40,7 +40,7 @@ int main(void)
 				printf(("Bye !"));
 				return (0);
 			default:
-				printf("Invalid choice\n")
+				printf("Invalid choice\n");
 				break;
 		}
 	}
