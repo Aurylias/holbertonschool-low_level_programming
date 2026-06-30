@@ -13,7 +13,6 @@ int divide(int a, int b);
 
 void print_menu(void)
 {
-	printf("Simple Calculator\n");
 	printf("1) Add\n");
 	printf("2) Subtract\n");
 	printf("3) Multiply\n");
@@ -80,6 +79,9 @@ int main(void)
 	int is_running = 1;
 	int menu_choice, first_num, second_num;
 
+
+	printf("Simple Calculator\n");
+
 	while (is_running)
 	{
 		print_menu();
@@ -88,8 +90,8 @@ int main(void)
 		switch(menu_choice)
 		{
 			case 0:
+				prinf("Bye !");
 				return (0);
-				break;
 			case 1:
 				printf("Type your first number to add: ");
 				scanf("%d", &first_num);
