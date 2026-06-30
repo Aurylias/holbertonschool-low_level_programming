@@ -8,5 +8,9 @@
 
 int _strlen(char *s)
 {
-	return (sizeof(*s) - 1);
+	char *last = s;
+
+  	while(*last++);
+
+    return last - s - 1;
 }
