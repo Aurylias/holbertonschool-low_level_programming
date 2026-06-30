@@ -14,7 +14,7 @@ void print_menu(void)
 	printf("3) Multiply\n");
 	printf("4) Divide\n");
 	printf("0) Quit\n");
-	printf("Your choice: ");
+	printf("Choice: ");
 }
 
 /**
@@ -24,10 +24,6 @@ void print_menu(void)
 
 int main(void)
 {
-	int is_running = 1;
-	int menu_choice, first_num, second_num;
-
-
 	printf("Simple Calculator\n");
 
 	print_menu();
@@ -39,5 +35,4 @@ int main(void)
 				printf("Bye !");
 				return (0);
 	}
-
 }
