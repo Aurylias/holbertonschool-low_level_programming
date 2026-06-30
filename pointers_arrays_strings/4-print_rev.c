@@ -31,10 +31,10 @@ void print_rev(char *s)
 	int len = _strlen(s);
 	int i;
 
-	_putchar(s[0]);
 	for (i = len; i != 0; i--)
 	{
 		_putchar(s[i]);
 	}
+	_putchar(s[0]);
 	_putchar(10);
 }
