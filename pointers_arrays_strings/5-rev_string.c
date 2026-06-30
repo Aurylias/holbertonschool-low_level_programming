@@ -29,10 +29,15 @@ int _strlen(char *s)
 void rev_string(char *s)
 {
 	int i = _strlen(s) - 1;
+	int j = 0;
+	char str;
 
-	for (; i >= 0; i--)
+	for (; j < i; i--)
 	{
-		_putchar(s[i]);
+		str = s[j];
+        s[j] = s[i];
+        s[i] = str;
+
+		j++;
 	}
-	_putchar(10);
 }
