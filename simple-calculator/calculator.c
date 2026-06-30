@@ -85,6 +85,7 @@ int main(void)
 	while (is_running)
 	{
 		print_menu();
+		printf("Choice: ");
 		scanf("%d", &menu_choice);
 
 		switch(menu_choice)
