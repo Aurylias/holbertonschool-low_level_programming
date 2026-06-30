@@ -1,1 +1,1 @@
-Some text
+gcc calculator.c -Wall -Werror -Wextra -pedantic -std=gnu89 -o calculator
