@@ -26,7 +26,7 @@ int _strlen(char *s)
 
 void puts2(char *str)
 {
-	int len = _strlen(str);
+	int len = _strlen(str) - 1;
 	int i;
 
 	for (i = 0; i <= len; i++)
