@@ -21,7 +21,7 @@ int _strlen(char *s)
 }
 
 /**
- * rev_string
+ * rev_string - Reverse a given string
  * @s: Test
  * Return: None
  */
@@ -35,8 +35,8 @@ void rev_string(char *s)
 	for (; j < i; i--)
 	{
 		str = s[j];
-        s[j] = s[i];
-        s[i] = str;
+		s[j] = s[i];
+		s[i] = str;
 
 		j++;
 	}
