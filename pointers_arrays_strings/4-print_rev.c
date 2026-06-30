@@ -1,20 +1,5 @@
 #include "main.h"
 
-int _strlen(char *s);
-
-/**
- * _strlen - Return the length of a string
- * @s: Pointer of a string
- * Return: The size of a string
- */
-
-int _strlen(char *s)
-{
-	char *last = s;
-
-	
-}
-
 /**
  * print_rev - Print a string in reverse
  * @s: Pointer to a string
