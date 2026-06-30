@@ -33,7 +33,8 @@ int main(void)
 
 	if (menu_choice == 0)
 	{
-		printf(("Bye !"))
+		printf(("Bye !"));
 		return (0);
 	}
+	return (0);
 }
