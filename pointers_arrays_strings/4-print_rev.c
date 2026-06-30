@@ -12,12 +12,7 @@ int _strlen(char *s)
 {
 	char *last = s;
 
-	while (*last++)
-	{
-
-	}
-
-	return (last - s - 1);
+	
 }
 
 /**
@@ -28,10 +23,13 @@ int _strlen(char *s)
 
 void print_rev(char *s)
 {
-	int len = _strlen(s);
 	int i;
 
-	for (i = len; i > 0; i--)
+	while (*last++)
+	{
+	}
+
+	for (; i >= 0; i--)
 	{
 		_putchar(s[i]);
 	}
