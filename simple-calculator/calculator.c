@@ -58,7 +58,7 @@ int multiply(int a, int b)
 }
 
 /**
- * add - Divide two decimal
+ * divide - Divide two decimal
  * @a: First value to divide
  * @b: Second value to divide
  * Return: a / b
@@ -85,13 +85,12 @@ int main(void)
 	while (is_running)
 	{
 		print_menu();
-		printf("Choice: ");
 		scanf("%d", &menu_choice);
 
-		switch(menu_choice)
+		switch (menu_choice)
 		{
 			case 0:
-				prinf("Bye !");
+				printf("Bye !");
 				return (0);
 			case 1:
 				printf("Type your first number to add: ");
@@ -100,7 +99,8 @@ int main(void)
 				printf("Type your second number to add: ");
 				scanf("%d", &second_num);
 
-				printf("The result of %d + %d is %d.\n\n", first_num, second_num, add(first_num, second_num));
+				printf("The result of %d + %d is %d.\n\n",
+					first_num, second_num, add(first_num, second_num));
 				break;
 			case 2:
 				printf("Type your first number to subtract: ");
@@ -109,7 +109,8 @@ int main(void)
 				printf("Type your second number to subtract: ");
 				scanf("%d", &second_num);
 
-				printf("The result of %d - %d is %d.\n\n", first_num, second_num, subtract(first_num, second_num));
+				printf("The result of %d - %d is %d.\n\n",
+					first_num, second_num, subtract(first_num, second_num));
 				break;
 			case 3:
 				printf("Type your first number to multiply: ");
@@ -118,7 +119,8 @@ int main(void)
 				printf("Type your second number to multiply: ");
 				scanf("%d", &second_num);
 
-				printf("The result of %d * %d is %d.\n\n", first_num, second_num, multiply(first_num, second_num));
+				printf("The result of %d * %d is %d.\n\n",
+					first_num, second_num, multiply(first_num, second_num));
 				break;
 			case 4:
 				printf("Type your first number to divide: ");
@@ -127,7 +129,8 @@ int main(void)
 				printf("Type your second number to divide: ");
 				scanf("%d", &second_num);
 
-				printf("The result of %d / %d is %d.\n\n", first_num, second_num, divide(first_num, second_num));
+				printf("The result of %d / %d is %d.\n\n",
+					first_num, second_num, divide(first_num, second_num));
 				break;
 		}
 	}
