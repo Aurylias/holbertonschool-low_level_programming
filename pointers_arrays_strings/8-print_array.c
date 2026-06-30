@@ -2,13 +2,19 @@
 #include "main.h"
 
 /**
- * print_array -
+ * print_array - Print all value of an array to n
  * @a: An array of int
- * @n: Index of the array to use
+ * @n: Index of the array to reach
  * Return: None
  */
 
 void print_array(int *a, int n)
 {
-    printf("%d", a[n - 1]);
+	int i;
+
+	for (i = 0; i <= n; i++)
+	{
+		printf("%d", a[i]);
+	}
+	printf("\n");
 }
