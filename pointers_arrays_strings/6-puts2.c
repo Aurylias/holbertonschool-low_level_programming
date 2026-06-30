@@ -19,7 +19,7 @@ int _strlen(char *s)
 }
 
 /**
- * puts2 - Print 
+ * puts2 - Print one of two character
  * @str: Pointer to a char
  * Return: None
  */
