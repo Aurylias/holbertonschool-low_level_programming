@@ -29,6 +29,11 @@ int _atoi(char *s)
 				break;
 			}
 		}
+
+		if (s[i] == 59)
+		{
+			break;
+		}
 	}
 
 	if (minus % 2 == 0)
