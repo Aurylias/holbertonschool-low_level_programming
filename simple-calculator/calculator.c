@@ -30,28 +30,14 @@ int main(void)
 
 	printf("Simple Calculator\n");
 
-	while (is_running)
-	{
-		print_menu();
-		scanf("%d", &menu_choice);
+	print_menu();
+	scanf("%d", &menu_choice);
 
-		switch (menu_choice)
-		{
+	switch (menu_choice)
+	{
 			case 0:
 				printf("Bye !");
 				return (0);
-			case 1:
-
-				break;
-			case 2:
-
-				break;
-			case 3:
-
-				break;
-			case 4:
-
-				break;
-		}
 	}
+
 }
