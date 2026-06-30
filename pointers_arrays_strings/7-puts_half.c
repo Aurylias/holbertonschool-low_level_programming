@@ -34,7 +34,7 @@ void puts_half(char *str)
 	{
 		half++;
 	}
-	
+
 	for (i = half; str[i] != '\0'; i++)
 	{
 		_putchar(str[i]);
