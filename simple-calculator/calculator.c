@@ -24,15 +24,16 @@ void print_menu(void)
 
 int main(void)
 {
+	int menu_choice;
+
 	printf("Simple Calculator\n");
 
 	print_menu();
 	scanf("%d", &menu_choice);
 
-	switch (menu_choice)
+	if (menu_choice == 0)
 	{
-			case 0:
-				printf("Bye !");
-				return (0);
+		printf(("Bye !"))
+		return (0);
 	}
 }
