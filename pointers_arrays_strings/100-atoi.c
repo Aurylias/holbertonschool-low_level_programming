@@ -9,12 +9,29 @@
 int _atoi(char *s)
 {
     int res = 0;
-    int i = 0;
+    int i;
+	int negative = 1;
 
-    while (strg[i] != '\0')
+    while (s[i] != '\0')
     {
-        res = res * 10 + (strg[i] - '0');
-        i++;
+		if (s[i] == 45)
+		{
+			negative = -1;
+		}
+
+		while (s[i] >= 48 && s[i] <= 57)
+		{
+			res = res * 10 + (s[i] - '0');
+        	i++;
+		}
     }
 
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		
+	}
+
+	return (res * negative);
 }
+
+
