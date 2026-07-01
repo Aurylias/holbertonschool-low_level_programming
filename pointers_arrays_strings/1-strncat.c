@@ -33,7 +33,7 @@ char *_strncat(char *dest, char *src, int n)
 	int i;
 	int j = 0;
 
-	for (i = d_len; i <= (d_len + (s_len - n)); i++)
+	for (i = d_len; i <= (d_len + (s_len - n) + 1); i++)
 	{
 		dest[i] = src[j];
 		j++;
