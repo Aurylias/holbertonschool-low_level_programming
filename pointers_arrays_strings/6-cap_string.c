@@ -21,7 +21,7 @@ char *cap_string(char *str)
 		{
 			for (j = 0; seprarator[j] != '\0'; j++)
 			{
-				if (str[i] == seprarator[j])
+				if (str[i - 1] == seprarator[j])
 				{
 					separat = 1;
 					break;
