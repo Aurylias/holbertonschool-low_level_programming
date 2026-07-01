@@ -15,7 +15,7 @@ int _strlen(char *s)
 
 	}
 
-	return (last - s);
+	return (last - s - 1);
 }
 
 /**
@@ -30,10 +30,12 @@ char *_strcat(char *dest, char *src)
 	int d_len = _strlen(dest);
 	int s_len = _strlen(src);
 	int i;
+	int j = 0;
 
 	for (i = d_len; i <= (d_len + s_len); i++)
 	{
-		dest[i] = src[s_len - s_len];
+		dest[i] = src[j];
+		j++;
 	}
 
 	return (dest);
