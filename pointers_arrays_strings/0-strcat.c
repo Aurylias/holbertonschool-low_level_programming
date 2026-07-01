@@ -22,7 +22,7 @@ int _strlen(char *s)
  * _strcat - Add two string together
  * @dest: First string to add
  * @src: Second string to add
- * Return - Added strings
+ * Return: Added strings
  */
 
 char *_strcat(char *dest, char *src)
