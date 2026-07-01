@@ -19,11 +19,11 @@ int _strlen(char *s)
 }
 
 /**
- * _strncat - 
- * @dest:
- * @src:
- * @n:
- * Return: 
+ * _strncat - Add char to dest until n index
+ * @dest: First string to add
+ * @src: Second string to add
+ * @n: The index of src to reach
+ * Return: A string concateneted
  */
 
 char *_strncat(char *dest, char *src, int n)
