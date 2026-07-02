@@ -26,6 +26,7 @@ unsigned int _strspn(char *s, char *accept)
 				return (occurence);
 			}
 		}
+		i++;
 	}
 	return (occurence);
 }
