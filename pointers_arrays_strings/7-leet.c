@@ -8,5 +8,20 @@
 
 char *leet(char *str)
 {
-	
+	int i = 0;
+	int j;
+	int from[] = "aAeEoOtTlL";
+	int to[] = "4433007711";
+
+	while (str[i] != '\0')
+	{
+		for (j = 0; from[i] != '\0')
+		{
+			if (str[i] == from[j])
+			{
+				str[i] = to[j];
+			}
+		}
+	}
+	return (str);
 }
