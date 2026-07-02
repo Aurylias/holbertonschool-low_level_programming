@@ -3,9 +3,9 @@
 
 /**
  * _strstr - Locates a substring
- * @haystack: 
- * @needle:
- * Return:
+ * @haystack: The string to search
+ * @needle: The substring
+ * Return: A char pointer to the beginning of the located substring
  */
 
 char *_strstr(char *haystack, char *needle)
