@@ -22,6 +22,7 @@ char *leet(char *str)
 				str[i] = to[j];
 			}
 		}
+		i++;
 	}
 	return (str);
 }
