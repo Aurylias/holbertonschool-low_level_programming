@@ -1,4 +1,5 @@
 #include "main.h"
+#define NULL 0
 
 /**
  * _strpbrk - Search a string for any set of bytes
@@ -7,8 +8,7 @@
  * Return: Number of bytes int the initial segment of s
  */
 
-char *_strpbrk(char *s, char *accept);
-
+char *_strpbrk(char *s, char *accept)
 {
 	unsigned int i = 0;
 	int j;
