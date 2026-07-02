@@ -21,7 +21,7 @@ unsigned int _strspn(char *s, char *accept)
 				occurence++;
 				break;
 			}
-			if (accept[j - 1] == '\0' && s[i] != accept[j])
+			else if (accept[j - 1] == '\0' && s[i] != accept[j])
 			{
 				return (occurence);
 			}
