@@ -8,12 +8,11 @@
 
 char *leet(char *str)
 {
-	int i = 0;
-	int j;
+	int i, j;
 	char from[] = "aAeEoOtTlL";
 	char to[] = "4433007711";
 
-	while (str[i] != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		for (j = 0; from[i] != '\0'; j++)
 		{
@@ -22,7 +21,6 @@ char *leet(char *str)
 				str[i] = to[j];
 			}
 		}
-		i++;
 	}
 	return (str);
 }
