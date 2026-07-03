@@ -2,7 +2,7 @@
 
 ## Measurement Methodology
 
-We use the `clock_t` type for our variables `start` and `end`, which is a type that's capable of representing the processor time used by a process in ticks. On the other hand, we use the function `clock()` which returns the number of ticks elapsed since the program was launched.
+We use the `clock_t` type for our variables `start` and `end`, which is a type that's capable of representing the processor time used by a process in ticks. On the other hand, we use the function `clock()` which measure the CPU time in ticks, ticks which begin being counted at the start of the program.
 
 `start` takes the number of ticks elapsed since the start of the program just before the implementation we want to measure and `end` takes the number of ticks elapsed right after the implementation finishes running.
 Then we subtract `end` by `start` to get the runtime of the implementation in ticks, and then we divide this result by `CLOCKS_PER_SEC` to convert the ticks into seconds, giving us the runtime of the implementation in seconds.
