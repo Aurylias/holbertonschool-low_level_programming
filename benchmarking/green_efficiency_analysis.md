@@ -2,12 +2,12 @@
 
 ## Measurement Methodology
 
-We use the `clock_t` type for our variables `start` and `end`, which is a type that's capable of representing the processor time used by a process in ticks. On the other hand, we use the function `clock()` which measure the CPU time in ticks, ticks which begin being counted at the start of the program. Ticks are a more relevant metric for our measurement than wall-clock we can get with `time()`.
+We use the `clock_t` type for our variables `start` and `end`, which is a type that's capable of representing the processor time used by a process in ticks. On the other hand, we use the function `clock()` which measures the CPU time in ticks, with ticks counted at the start of the program. CPU time is a more relevant metric for our measurement than the wall-clock time obtained with `time()`, because CPU time isolates the processor work.
 
 `start` takes the number of ticks elapsed since the start of the program just before the implementation we want to measure and `end` takes the number of ticks elapsed right after the implementation finishes running.
 Then we subtract `end` by `start` to get the runtime of the implementation in ticks, and then we divide this result by `CLOCKS_PER_SEC` to convert the ticks into seconds, giving us the runtime of the implementation in seconds.
 
-We used this method three times in a row for all implementation we tested, on the same computer and then calculate the average runtime. After that, we compared the avarage value to see which one was faster and the reason why.
+We used this method three times in a row for all implementations we tested, on the same computer and then calculate the average runtime. After that, we compared the average value to see which one was faster and the reason why.
 
 ## Observed Performance Differences
 
