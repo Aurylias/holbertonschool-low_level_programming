@@ -2,7 +2,7 @@
 
 ## Measurement Methodology
 
-We use the `clock_t` type for our variables `start` and `end`, which is a type that's capable of representing the processor time used by a process in ticks. On the other hand, we use the function `clock()` which measure the CPU time in ticks, ticks which begin being counted at the start of the program.
+We use the `clock_t` type for our variables `start` and `end`, which is a type that's capable of representing the processor time used by a process in ticks. On the other hand, we use the function `clock()` which measure the CPU time in ticks, ticks which begin being counted at the start of the program. Ticks are a more relevant metric for our measurement than wall-clock we can get with `time()`.
 
 `start` takes the number of ticks elapsed since the start of the program just before the implementation we want to measure and `end` takes the number of ticks elapsed right after the implementation finishes running.
 Then we subtract `end` by `start` to get the runtime of the implementation in ticks, and then we divide this result by `CLOCKS_PER_SEC` to convert the ticks into seconds, giving us the runtime of the implementation in seconds.
@@ -19,7 +19,7 @@ We can clearly see the second implementation is way much faster (around **8255 t
 
 ## Relation Between Runtime and Energy Consumption
 
- On a hardware level, energy is mostly consumed when transistors switch on/off so, in general, longer runtime means longer CPU activity. And longer CPU activity requires more energy, with some of this energy being wasted in the form of heat. Heat which needs to be dealt with consuming even more energy.
+On a hardware level, energy is mostly consumed when transistors switch on/off so, in general, longer runtime means longer CPU activity. And longer CPU activity requires more energy, with some of this energy being wasted in the form of heat. Heat which needs to be dealt with consuming even more energy.
 
 ## Limitations of the Experiment
 
