@@ -37,12 +37,12 @@ char *str_concat(char *s1, char *s2)
 	new_string = malloc((sizeof(*new_string) * len_s1) +
 				(sizeof(*new_string * len_s2)));
 
-	for (i = 0; s1[i] != '\0')
+	for (i = 0; s1[i] != '\0'; i++)
 	{
 		new_string[i] = s1[i];
 	}
 
-	for (i = 0; s2[i] != '\0')
+	for (i = 0; s2[i] != '\0'; i++)
 	{
 		new_string[len_s2 + i] = s2[i];
 	}
