@@ -31,14 +31,14 @@ char *str_concat(char *s1, char *s2)
 
 	new_string = malloc(sizeof(*new_string) * (len_s1 + len_s2 + 1));
 
-	for (i = 0; i <= len_s1; i++)
+	for (i = 0; i < len_s1; i++)
 	{
 		new_string[i] = s1[i];
 	}
 
 	for (i = 0; i <= len_s2; i++)
 	{
-		new_string[len_s2 + i - 1] = s2[i];
+		new_string[len_s2 + i] = s2[i];
 	}
 
 	return (new_string);
