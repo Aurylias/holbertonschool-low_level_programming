@@ -24,14 +24,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	}
 
-	for (len_s1 = 0; len_s1[i]; len_s1++)
+	for (len_s1 = 0; s1[i]; len_s1++)
 	{
 
 	}
 
-	for (len_s2 = 0; len_s2[i]; len_s2++)
+	for (len_s2 = 0; s2[i]; len_s2++)
 	{
-		
+
 	}
 
 	if (n >= len_s2)
