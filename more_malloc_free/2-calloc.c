@@ -3,9 +3,9 @@
 
 /**
 * _calloc - Allocate memory for an array
-* @nmemb: 
-* @size: 
-* Return:
+* @nmemb: Size of the array
+* @size: Size of the data
+* Return: Pointer to the new array
 */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -21,7 +21,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (arr == NULL)
 		return (NULL);
 
-	for (i = 0; i < nmemb; i++)
+	for (i = 0; i < (nmemb * size); i++)
 	{
 		arr[i] = 0;
 	}
