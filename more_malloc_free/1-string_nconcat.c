@@ -24,15 +24,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = "";
 	}
 
-	for (len_s1 = 0; s1[len_s1]; len_s1++)
-	{
+	while (s1[len_s1])
+		len_s1++;
 
-	}
-
-	for (len_s2 = 0; s2[len_s2]; len_s2++)
-	{
-
-	}
+	while (s2[len_s2])
+		len_s2++;
 
 	if (n >= len_s2)
 	{
