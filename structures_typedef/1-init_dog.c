@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
-* init_dog - Initialize a variable 
+* init_dog - Initialize a variable
 * @d: Pointeur to a struct
 * @name: pointeur to the name var in d
 * @age: pointeur to the age var in d
