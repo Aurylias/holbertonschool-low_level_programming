@@ -48,8 +48,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	n_dog->name = name_cpy;
-	n_dog->owner = owner_cpy;
+	n_dog->name = name;
+	n_dog->owner = owner;
 	n_dog->age = age;
 
 	return (n_dog);
