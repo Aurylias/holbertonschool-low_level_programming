@@ -16,8 +16,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *n_dog;
 	int len_name;
 	int len_owner;
-	char name_cpy;
-	char owner_cpy;
 
 	for (len_name = 0; name[len_name]; len_name++)
 	{}
@@ -50,9 +48,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	}
 
 	n_dog->name = name;
-	name_cpy = n_dog->name;
 	n_dog->owner = owner;
-	owner_cpy = n_dog->owner;
 	n_dog->age = age;
 
 	return (n_dog);
