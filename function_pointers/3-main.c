@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	if ((argc - 1) < 3)
 	{
 		printf("Error\n");
-		exit(98)
+		exit(98);
 	}
 
 	op = argv[2];
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 		exit(100);
 	}
 
-	printf("%d\n", get_op_func(op)(argv[1], argv[3]));
+	printf("%d\n", get_op_func(op)(atoi(argv[1]), atoi(argv[3])));
 
 	return (0);
 }
