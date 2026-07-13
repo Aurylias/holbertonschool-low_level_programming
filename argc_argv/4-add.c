@@ -11,21 +11,27 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
+	int i, j;
 	int result = 0;
 
 	if (argv[1] == NULL)
+	{
 		printf("0\n");
+		return (0);
+	}
 
 	for (i = 1; i < argc; i++)
 	{
-		if (!atoi(argv[i]))
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			printf("Error\n");
-			return (1);
-		}
+			if (!atoi(argv[i]))
+			{
+				printf("Error\n");
+				return (1);
+			}
 
-		result += atoi(argv[i]);
+			result += atoi(argv[i]);
+		}
 	}
 
 	printf("%d\n", result);
