@@ -1,9 +1,9 @@
 #include "3-calc.h"
 
 /**
-* get_op_func -
-* @s: 
-* Return: 
+* get_op_func - Determine which operation to use
+* @s: The symbole for matching
+* Return: A function pointer to the operation
 */
 
 int (*get_op_func(char *s))(int, int)
