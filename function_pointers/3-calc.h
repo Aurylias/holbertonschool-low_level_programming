@@ -4,6 +4,12 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+/**
+ * struct op - Struct for operation
+ * @op: The operator
+ * @f: The function associated with
+ */
+
 typedef struct op
 {
 	char *op;
