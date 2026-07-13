@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	if ((argc - 1) != 2)
 		return (1);
 
-	result = argv[1] * argv[2]
+	result = atoi(argv[1]) * atoi(argv[2]);
 
 	printf("%d", result);
 
