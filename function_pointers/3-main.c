@@ -5,8 +5,31 @@
 * Return: Always 0 (Success)
 */
 
-int main(void)
+int main(int argc, char *argv[])
 {
-	op_t *operation;
-	scanf("%s", &operation->op);
+	char *op;
+
+	if ((argc - 1) < 3)
+	{
+		printf("Error\n");
+		exit(98)
+	}
+
+	op = argv[2];
+
+	if (get_op_func(op) == NULL || op[1] != '\0')
+	{
+		printf("Error\n");
+		exit(99);
+	}
+
+	if (argv[3] == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
+
+	printf("%d\n", get_op_func(op)(argv[1], argv[3]));
+
+	return (0);
 }
