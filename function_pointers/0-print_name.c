@@ -2,8 +2,9 @@
 #include <stdlib.h>
 
 /**
-* print_name - 
-* @name:
+* print_name - Print a string using different fonction
+* @name: String to print
+* @f: A function accepting a string
 * Return: None
 */
 
