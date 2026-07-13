@@ -15,10 +15,10 @@ int main(int argc, char *argv[])
 
 	if ((argc - 1) != 2)
 	{
-		printf("Error");
+		printf("Error\n");
 		return (1);
 	}
-	
+
 	result = atoi(argv[1]) * atoi(argv[2]);
 
 	printf("%d\n", result);
