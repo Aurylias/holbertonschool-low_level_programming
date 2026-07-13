@@ -21,13 +21,11 @@ int main(int argc, char *argv[])
 	{
 		if (!atoi(argv[i]))
 		{
-			result += atoi(argv[i]);
-		}
-		else
-		{
 			printf("Error\n");
 			return (1);
 		}
+
+		result += atoi(argv[i]);
 	}
 
 	printf("%d", result);
