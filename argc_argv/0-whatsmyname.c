@@ -8,7 +8,7 @@
 * Return: Always O (Success)
 */
 
-int main(int argc, char *argv[])
+int main(char *argv[])
 {
 	printf("%s", argv[0]);
 
