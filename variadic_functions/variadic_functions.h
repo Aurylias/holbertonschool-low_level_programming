@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <srdarg.h>
+#include <stdarg.h>
 
 int _putchar(char c);
 
