@@ -335,14 +335,3 @@ read.
 `main` returns. The `Person` structs and the name strings they point to are the heap
 objects; their lifetime is controlled entirely by explicit `malloc`/`free` calls, not by
 scope.
-
----
-
-## Summary Table
-
-| Program | Stack objects | Heap objects | Aliasing present? | Notable bug/behavior |
-|---|---|---|---|---|
-| `stack_example.c` | `local_int`, `local_buf`, `marker` (all frames) | none | `p_local` aliases `local_int` (same frame, safe) | none — clean recursion |
-| `aliasing_example.c` | `a`, `b`, `n`, `arr`, `i` | `int[5]` block | `a` & `b` alias the same block | use-after-free (see §2 boxed correction) |
-| `crash_example.c` | `nums`, `n` | none (never reached `malloc`) | n/a | NULL pointer dereference, SIGSEGV, lost stdout buffer |
-| `heap_example.c` | `alice`, `bob` | 2 structs + 2 name strings | `p->name` aliases the separately-allocated string via the struct | `alice->name` memory leak |

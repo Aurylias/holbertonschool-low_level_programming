@@ -203,14 +203,3 @@ Correctly classifying this line is part of the point: a naive read of the Valgri
 could mistake "still reachable: 4,096 bytes" for "the program leaks memory," when the
 actual, code-level bug here is the NULL dereference, and the reachable block is a harmless
 side effect of the process dying before glibc's normal `stdio` cleanup ran.
-
----
-
-## Summary Table
-
-| Program | Valgrind classification | Memory object | Root cause |
-|---|---|---|---|
-| `stack_example` | none (0 errors) | — | all accesses are within-lifetime stack accesses; no heap use |
-| `aliasing_example` | use-after-free (1 invalid write, 2 invalid reads) | `int[5]` heap block from `make_numbers`, aliased by `a`/`b` | reads/writes through `b` after `free(a)` ended the block's lifetime |
-| `heap_example` | memory leak, definitely lost (6 bytes) | `alice->name` heap string | `person_free_partial` frees the struct but not `p->name`; the only pointer to the string is destroyed while the string itself is never freed |
-| `crash_example` | invalid write (NULL deref) + 1 still-reachable block (not a bug) | write target: address `0x0`, no object; reachable block: glibc's internal stdio buffer | `allocate_numbers(0)` legitimately returns `NULL`; `main` dereferences it without checking |
