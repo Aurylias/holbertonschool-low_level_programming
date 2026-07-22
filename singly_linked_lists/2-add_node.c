@@ -3,7 +3,7 @@
 /**
 * add_node - add a node at the beginning of the list
 * @head: The head of the list
-* @str:
+* @str: String to copy
 * Return: A pointeur to the new head or null if failed
 */
 
