@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
-* dlistint_len - Return the length of the list
+* add_dnodeint - Add a node at the start of the list
 * @h: pointer to the first node
-* Return: Number of nodes
+* Return: Pointer to the new head
 */
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
