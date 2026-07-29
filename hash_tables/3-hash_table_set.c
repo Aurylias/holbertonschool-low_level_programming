@@ -6,6 +6,7 @@
 * @key: The key
 * @value: The value of the key
 * Return: 1 if it succeeded, 0 otherwise
+* Description : Made with the AI as a teacher, no answer given by it
 */
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
