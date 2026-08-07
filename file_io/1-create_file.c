@@ -30,7 +30,7 @@ int create_file(const char *filename, char *text_content)
 	len = strlen(text_content);
 	char_count = write(file, text_content, len);
 
-	if (char_count == -1 || (size_t)char_count != len)
+	if (char_count == -1 || char_count != len)
 		return (-1);
 
 	close(file);
